@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.footballcounter.MainActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tombrady1"
+        android:alpha=".25"/>
+
+    <View
+        android:layout_height="match_parent"
+        android:layout_width="1dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/background_dark"
+        android:layout_marginBottom="170dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:onClick="reset"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#1E88E6"
+        android:textColor="#fff"/>
+
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team A"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_gravity="center_horizontal"
+            android:textSize="62sp"
+            android:id="@+id/team_a_score"/>
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Touchdown"
+            android:onClick="six"
+            android:textAllCaps="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="8dp"
+            android:background="#1E88E6"
+            android:textColor="#fff" />
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="field goal"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="true"
+            android:onClick="one"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="8dp"
+            android:background="#1E88E6"
+            android:textColor="#fff"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="conversion"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="true"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="8dp"
+            android:onClick="two"
+            android:background="#1E88E6"
+            android:textColor="#fff"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Safety"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="true"
+            android:onClick="safe"
+            android:background="#1E88E6"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team B"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="62sp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/team_b_score"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Touchdown"
+                android:onClick="si"
+                android:textAllCaps="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:background="#1E88E6"
+                android:textColor="#fff"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="field goal"
+                android:textAllCaps="true"
+                android:onClick="on"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:background="#1E88E6"
+                android:textColor="#fff"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="conversion"
+                android:textAllCaps="true"
+                android:onClick="tw"
+                android:layout_margin="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:background="#1E88E6"
+                android:textColor="#fff"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Safety"
+                android:textAllCaps="true"
+                android:onClick="saf"
+                android:layout_margin="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:background="#1E88E6"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+
+
+
